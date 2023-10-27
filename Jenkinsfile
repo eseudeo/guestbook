@@ -101,7 +101,7 @@ pipeline {
         }
         stage ('JMeter LoadTest') {
             steps { 
-                echo "오래걸림"
+                echo "오래 걸려서 주석처리 추후 설정 필요 "
                 //sh '~/lab/sw/jmeter/bin/jmeter.sh -j jmeter.save.saveservice.output_format=xml -n -t src/main/jmx/guestbook_loadtest.jmx -l loadtest_result.jtl' 
                 //perfReport filterRegex: '', showTrendGraphs: true, sourceDataFiles: 'loadtest_result.jtl' 
             } 
